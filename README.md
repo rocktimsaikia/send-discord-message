@@ -22,10 +22,12 @@ pnpm add send-discord-message
 ```javascript
 import SendDiscordMessage from "send-discord-message";
 
+// Initialize the messenger
 const messenger = new SendDiscordMessage({
 	webhookUrl: process.env.DISCORD_WEBHOOK_URL
 })
 
+// Send a message. That's it!
 await messenger.send("Hello, world!");
 ```
 
