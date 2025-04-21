@@ -1,6 +1,6 @@
 {
 	"name": "send-discord-message",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Send message to a Discord channel using channel webhooks.",
 	"keywords": [
 		"send-discord-message",
