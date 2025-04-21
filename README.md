@@ -1,6 +1,6 @@
 # send-discord-message
 
-Send message to a Discord channel using webhooks. (Simplified)
+Send message to a Discord channel using channel webhooks. (Simplified)
 
 [![Tests](https://github.com/rocktimsaikia/send-discord-message/actions/workflows/tests.yml/badge.svg)](https://github.com/rocktimsaikia/send-discord-message/actions/workflows/tests.yml) [![Release](https://github.com/rocktimsaikia/send-discord-message/actions/workflows/release.yml/badge.svg)](https://github.com/rocktimsaikia/send-discord-message/actions/workflows/release.yml) [![npm](https://img.shields.io/npm/v/send-discord-message?color=bright)](https://npmjs.com/package/send-discord-message)
 
@@ -22,7 +22,7 @@ pnpm add send-discord-message
 ```javascript
 import SendDiscordMessage from "send-discord-message";
 
-// Initialize the messenger
+// Initialize the messenger with a Discord channel webhook
 const messenger = new SendDiscordMessage({
 	webhookUrl: process.env.DISCORD_WEBHOOK_URL
 })
@@ -46,7 +46,7 @@ Creates a new instance of the `SendDiscordMessage` class.
 
 - **`webhookUrl`**  
   > Type: `string`  
-  > Required. The Discord webhook URL to send messages to. Must start with `https://discord.com/api/webhooks/`.
+  > Required. The Discord channel webhook URL to send messages to. Must start with `https://discord.com/api/webhooks/`.
 
 ### `send(message)`
 
